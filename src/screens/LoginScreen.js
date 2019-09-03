@@ -10,16 +10,7 @@ class LoginScreen extends React.Component {
   };
 
   handleSubmit() {
-    const firebaseConfig = {
-      apiKey: "AIzaSyCvu6tbPOljuNwULO9toeVtJv14Gl8bYRU",
-      authDomain: "memoapp-7c34c.firebaseapp.com",
-      databaseURL: "https://memoapp-7c34c.firebaseio.com",
-      projectId: "memoapp-7c34c",
-      storageBucket: "",
-      messagingSenderId: "267972941505",
-      appId: "1:267972941505:web:e880fadeff68a63e"
-    };
-    firebase.initializeApp(firebaseConfig);
+
   }
 
   render() {
@@ -43,7 +34,7 @@ class LoginScreen extends React.Component {
           placeholder="Password"
           secureTextEntry
         />
-        <TouchableHighlight style={styles.button} onPress={this.handleSubmit.bind(this)}>
+        <TouchableHighlight style={styles.button} onPress={this.handleSubmit.bind(this)} underlayColor="#C70F66">
           <Text style={styles.buttonTitle}>ログインする</Text>
         </TouchableHighlight>
       </View>
